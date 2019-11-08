@@ -8,121 +8,121 @@
 
     h2 {
       padding: 15px;
-    }
+    }//h2 ends
 
     p {
       padding:0 15px;
-    }
+    }//p ends
   
-  }
+  }//.intro ends
 
   .space-images {
-    display: flex;
+    .flex();
     flex-wrap: wrap;
-    width: 100%;
+    .total-width();
 
-    @media @mobile{
+    @media @phone{
       padding: 4%;
-    }
+    }//@media ends
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
+    }//img ends
 
-    @media @mobile{
-      .sky, .launch{
+      @media @phone{
+        .sky, .launch{
         display: none;
-      }
+      }//.sky, .launch ends
 
       .blast{
-        width: 100%;
+        .total-width();
         margin: 0;
-      }
-    }
-  }
+      }//.blast ends
+    }//@media ends
+  }//.space-images ends
 
   .visit-planets {
     padding: 15px;
 
-    @media @mobile{
+    @media @phone{
       padding: 4%;
-    }
+    }//@media ends
 
     h3 {
       margin-top: 11px;
-    }
+    }//h3 ends
 
     p {
       margin-top: 13px;
-    }
-  }
+    }//p ends
+  }//.visit-planets ends
 
   .walk {
+    .flex();
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
     justify-content: center;
 
-    @media @mobile{
+    @media @phone{
       flex-direction: column-reverse;
       padding: 4%;
       margin-top: 2%;
-    }
+    }//@media ends
 
     .walk-text {
       width: 50%;
 
-      @media @mobile{
-        width: 100%;
+      @media @phone{
+        .total-width();
         margin-top: 5%;
-      }
+      }//@media ends
 
       h3 {
         margin-bottom: 10px;
 
-        @media @mobile{
+        @media @phone{
+          .flex();
           margin: 0% auto;
           flex-direction: row;
           width: 122%;
-          display: flex;
-        }
-      }
+        }//@media ends
+      }//h3 ends
 
       p {
         margin-bottom: 26px;
-      }
+      }//p ends
 
       .btn {
-          .custom-button();
+        .custom-button();
 
-          &:hover{
-            .custom-button-hover();
-          }
+        &:hover{
+          .custom-button-hover();
+        }//hover ends
 
-          @media @mobile{
-            width: 100%;
-          }
-      }
-    }
+        @media @phone{
+          .total-width();
+        }//@media ends
+      }//.btn ends
+    }//.walk-text ends
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
 
-      @media @mobile{
-          width: 100%;
+      @media @phone{
+          .total-width();
           margin-left: 0;
-        }
+        }//@media ends
       
       img {
-        width: 100%;
+        .total-width();
         height: auto;
         border-radius: 10px;
-      }
-    }
-  }
-}// home
+      }//img ends
+    }//.walk-img ends
+  }//.walk ends
+}// .home ends

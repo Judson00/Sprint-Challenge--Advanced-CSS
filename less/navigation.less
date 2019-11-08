@@ -1,22 +1,22 @@
 // Navigation Styles here
 
 .header{
-  display: flex;
+  .flex();
   flex-direction: row;
   justify-content: center;
   background: whitesmoke;
-  width:100%;
+  .total-width();
 
    
 
   header{
     margin:2% 0 0 0;
     padding-bottom: 1%;
-    display: flex;
+    .flex();
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    .total-width();
 
     h1{
       font-size: 4.5rem;
@@ -24,13 +24,13 @@
     }
 
     nav{
-      display: flex;
+      .flex();
       align-items: center;
       justify-content: space-evenly;
       width: 40%;
 
-      @media @mobile {
-        width: 100%;
+      @media @phone {
+        .total-width();
         margin: 1%;
       }
 
@@ -46,16 +46,16 @@
 }//.header ends
 
 .header-image{
-  display: flex;
+  .flex();
   justify-content: center;
 
   img{
   background-image: url('img/fun-bus.jpg');
-  width: 80%;
+  width: 77%;
   border-radius: 1%;
 
-    @media @mobile{
-      width: 100%;
+    @media @phone{
+      .total-width();
     }
 
   }//img ends

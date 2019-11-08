@@ -1,3 +1,9 @@
+.total-width {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -203,7 +209,7 @@ p {
 }
 .header-image img {
   background-image: url('img/fun-bus.jpg');
-  width: 80%;
+  width: 77%;
   border-radius: 1%;
 }
 @media (max-width:500px) {
@@ -271,10 +277,10 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
+  display: flex;
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
-  display: flex;
   justify-content: center;
 }
 @media (max-width:500px) {
@@ -298,10 +304,10 @@ footer {
 }
 @media (max-width:500px) {
   .home .walk .walk-text h3 {
+    display: flex;
     margin: 0% auto;
     flex-direction: row;
     width: 122%;
-    display: flex;
   }
 }
 .home .walk .walk-text p {
