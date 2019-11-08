@@ -1,1 +1,31 @@
 // Mixins Here
+
+//custom button
+.custom-button(@bg-color:@button-background, @font-clr:@porcelain, @size:130px){
+  display:flex;
+  background-color: @bg-color;
+  width: @size;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: @font-clr;   
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+//custom button hover feature
+.custom-button-hover(@bg-color:@porcelain, @font-clr:@button-background){
+  background-color: @bg-color;
+  color: @font-clr;   
+}
+
+//width mixin
+.total-width{
+  width: 100%;
+}
+
+//flex mixin
+.flex{
+  display: flex;
+}
