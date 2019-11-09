@@ -12,12 +12,15 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-//custom button hover feature
-.custom-button-hover(@bg-color:@porcelain, @font-clr:@button-background){
-  background-color: @bg-color;
-  color: @font-clr;   
+  
+    a{
+      text-decoration: none;
+    }
+    
+  &:hover{
+    background-color: @font-clr;
+    color: @bg-color;//look into this more
+  }
 }
 
 //width mixin
